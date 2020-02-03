@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="small-url">
+    <output-path>$PROJECT_DIR$/out/artifacts/small_url.war</output-path>
+    <root id="archive" name="small-url.war">
+      <element id="javaee-facet-resources" facet="small-url/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="small-url" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.sun.faces:jsf-api:2.2.13" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
