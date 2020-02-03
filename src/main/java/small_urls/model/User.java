@@ -1,18 +1,29 @@
-package bean.user;
+package small_urls.model;
 
-import javax.inject.Named;
+import small_urls.model.enums.Urls;
 
-import java.io.Serializable;
-
-/**
- *Created by Jhonat 2020/02/1
- * MVC - controller
- */
-@Named
-public class UserRegisterBean implements Serializable {
+public class User {
     private int id;
     private String name = "admin";
     private String password = "123";
+    private Urls url = Urls.url;
+    private Urls small_url = Urls.small_url;
+
+    public Urls getUrl() {
+        return url;
+    }
+
+    public void setUrl(Urls url) {
+        this.url = url;
+    }
+
+    public Urls getSmall_url() {
+        return small_url;
+    }
+
+    public void setSmall_url(Urls small_url) {
+        this.small_url = small_url;
+    }
 
     public String getName() {
         return name;
@@ -38,5 +49,3 @@ public class UserRegisterBean implements Serializable {
         this.id = id;
     }
 }
-
-
